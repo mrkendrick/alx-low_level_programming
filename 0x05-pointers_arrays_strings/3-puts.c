@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdout.h>
+#include <stdio.h>
 
 void _puts(char *str)
 {
