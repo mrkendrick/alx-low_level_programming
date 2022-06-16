@@ -5,17 +5,16 @@
  * @a: array to be reversed
  * @n: number of elements in the array
  */
-
 void reverse_array(int *a, int n)
 {
-	int aux[n];
+	int i, j, tmp;
 
-	for (int i = 0; i < n; i++)
+	j = n - 1;
+
+	for (i = 0; i < n / 2; i++)
 	{
-		aux[n - 1 - i] = a[i];
-	}
-	for (int i = 0; i < n; i++)
-	{
-		a[i] = aux[i];
+		tmp = a[i];
+		a[i] = a[j];
+		a[j--] = tmp;
 	}
 }
